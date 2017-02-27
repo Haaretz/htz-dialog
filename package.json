@@ -126,5 +126,12 @@
     ],
     "sourceMap": false,
     "instrument": false
+  },
+  "jspm": {
+    "name": "htz-dialog",
+    "main": "index.js",
+    "directories": {
+      "lib": "src"
+    }
   }
 }
