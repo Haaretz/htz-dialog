@@ -30,7 +30,11 @@ import {getInstance,allInstances} from './lib/instances';
  */
 import { safeChecks, getDialogs, moveWrapper, addDialogAttributes } from './lib/init';
 import addEventListners from './lib/addEventListeners';
-module.exports = htzDialog;
+
+if (typeof module === 'object' && module.exports) {
+ module.exports = htzDialog;
+}
+
 export default function htzDialog(wrapper,
                                   dialogClass = 'js-dialog',
                                   elemToHide = document.getElementById('page-wrapper'),
